@@ -22,7 +22,7 @@ app.use(cors({
 // MongoDB Connection with improved settings
 mongoose.set('strictQuery', false); // Remove deprecation warning
 
-const mongoURI = 'mongodb+srv://7123saif:7123SAIF@cluster0.gig43rw.mongodb.net/login-app?retryWrites=true&w=majority';
+const MONGO_URI='your-mongodb-connection-string',
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
